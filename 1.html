@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+<style>
+*{padding:0; margin:0;}
+.btn{ width:340px; height:30px; position:absolute; left:50%; margin-left:-150px; top:60px; }
+</style>
+<script>
+function send(input){
+var obj;
+obj=document.getElementById("box");
+obj.innerHTML=input.value;
+}
+</script>
+</head>
+<body>
+<marquee style="font-size:40px; filter: alpha(opacity=100,style=3); width:600px; color: red; line-height: 100%; position:absolute; left:50%; margin-left:-300px; border:1px solid #000; overflow:hidden; font-family: 华文行楷" scrollAmount=8 font><b id="box">幽幽世界欢迎你</b></font></marquee>
+
+<input type="text" name="txt1" onKeyup="javascript:send(this);" class="btn"/>
+</body>
+</html>
